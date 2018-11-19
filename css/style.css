@@ -39,7 +39,7 @@ main {
 
 /* Header */
 header {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,49 +74,27 @@ header nav.menu-header li a:hover {
 
 /* Nav -- social */
 nav.social {
-  background: #2682c2;
   display: none;
+  margin: 4em 0;
 }
 
 /* Nav -- menu */
 
-/* nav.menu {
-  display: flex;
+nav.menu {
+  width: 80%;
   margin: auto;
-  justify-content: center;
   text-align: center;
 }
 
 nav.menu ul li {
-  background: rgba(0, 0, 0, 0.8);
-  margin: 1px 0;
+  margin: 1px;
 }
 
 nav.menu ul li a {
+  background: rgba(0, 0, 0, 0.6);
   display: block;
-  padding: 1em 5em;
-}
-
-nav.menu ul li a:hover {
-  color: #2682c2;
-} */
-
-
-nav.menu{
-  width:80%;
-  margin:auto;
-  text-align:center;
-}
-
-nav.menu ul li {
-  margin:1px;
-}
-
-nav.menu ul li a{
-  background: rgba(0, 0, 0, 0.8);
-  display:block;
-  width:100%;
-  padding:0.6em 0;
+  width: 100%;
+  padding: 0.6em 0;
 }
 
 nav.menu ul li a:hover {
@@ -125,31 +103,66 @@ nav.menu ul li a:hover {
 
 
 @media only screen and (min-width: 767px) {
+  header h1 {
+    font-size: 2em;
+  }
+
   header nav.menu-header li.externe {
     display: block;
   }
 
-  header nav.menu-header span.externe{
-      width:1px;
-      background: #FFF;
+  header nav.menu-header span.externe {
+    width: 1px;
+    background: #FFF;
   }
 
   nav.social {
     display: block;
   }
 
+  nav.social ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 5vw;
+    background: #2682c2;
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  nav.social ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav.social ul li a{
+    padding: 10px 0;
+    display:block;
+  }
+
+  nav.social ul li a b {
+    font-weight: normal;
+    display:none;
+  }
+
+  nav.social ul li a:hover{
+    display:block;
+    background: #10435f;
+  }
+
   nav.menu ul {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: space-around;
   }
+
   nav.menu ul li {
-    width:33%;
-    margin:0;
+    width: 33%;
+    margin: 0;
   }
 
-  nav.menu ul li a{
-    padding:1em 0;
+  nav.menu ul li a {
+    font-size: 1.5em;
+    padding: 1em 0;
   }
 }
-
