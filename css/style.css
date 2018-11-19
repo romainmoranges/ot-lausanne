@@ -80,7 +80,7 @@ nav.social {
 
 /* Nav -- menu */
 
-nav.menu {
+/* nav.menu {
   display: flex;
   margin: auto;
   justify-content: center;
@@ -95,6 +95,28 @@ nav.menu ul li {
 nav.menu ul li a {
   display: block;
   padding: 1em 5em;
+}
+
+nav.menu ul li a:hover {
+  color: #2682c2;
+} */
+
+
+nav.menu{
+  width:80%;
+  margin:auto;
+  text-align:center;
+}
+
+nav.menu ul li {
+  margin:1px;
+}
+
+nav.menu ul li a{
+  background: rgba(0, 0, 0, 0.8);
+  display:block;
+  width:100%;
+  padding:0.6em 0;
 }
 
 nav.menu ul li a:hover {
@@ -116,9 +138,18 @@ nav.menu ul li a:hover {
     display: block;
   }
 
-  nav.menu {
-    display: flex;
-    flex-direction: row;
+  nav.menu ul {
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+  }
+  nav.menu ul li {
+    width:33%;
+    margin:0;
+  }
+
+  nav.menu ul li a{
+    padding:1em 0;
   }
 }
 
