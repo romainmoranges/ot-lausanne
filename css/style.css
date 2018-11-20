@@ -111,15 +111,16 @@ nav.menu ul li a:hover {
     display: block;
   }
 
-  header nav.menu-header li.externe a:first-child{
-    padding-right:10px;
+  header nav.menu-header li.externe a:first-child {
+    padding-right: 10px;
     border-right: solid 1px white;
   }
 
-  header nav.menu-header li.externe a:last-child{
-    padding-left:10px;
+  header nav.menu-header li.externe a:last-child {
+    padding-left: 10px;
   }
 
+  /*
   nav.social {
     display: block;
   }
@@ -152,6 +153,33 @@ nav.menu ul li a:hover {
   nav.social ul li a:hover{
     display:block;
     background: #10435f;
+  }
+*/
+
+  nav.social {
+    display: block;
+    font-size: 1.5em;
+  }
+
+  nav.social ul li a{
+    width: 64px;
+    height: 64px;
+    background-color: #2682c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav.social ul li a:hover{
+    background-color: #10435f;
+  }
+
+  nav.social ul li a:nth-of-type(1){
+    content:"Facebook";
+  }
+
+  nav.social ul li a b {
+    display: none;
   }
 
   nav.menu ul {
