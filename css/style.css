@@ -44,6 +44,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
+  margin-bottom:90%;
 }
 
 header div.logo {
@@ -103,6 +104,9 @@ nav.menu ul li a:hover {
 
 
 @media only screen and (min-width: 767px) {
+  header{
+    margin-bottom:0px;
+  }
   header h1 {
     font-size: 2em;
   }
@@ -119,42 +123,6 @@ nav.menu ul li a:hover {
   header nav.menu-header li.externe a:last-child {
     padding-left: 10px;
   }
-
-  /*
-  nav.social {
-    display: block;
-  }
-
-  nav.social ul {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    width: 5vw;
-    background: #2682c2;
-    font-size: 1.5em;
-    line-height: 1.5em;
-  }
-
-  nav.social ul li {
-    width: 100%;
-    text-align: center;
-  }
-
-  nav.social ul li a{
-    padding: 10px 0;
-    display:block;
-  }
-
-  nav.social ul li a b {
-    font-weight: normal;
-    display:none;
-  }
-
-  nav.social ul li a:hover{
-    display:block;
-    background: #10435f;
-  }
-*/
 
   nav.social {
     display: block;
